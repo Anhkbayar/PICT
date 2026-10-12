@@ -1,0 +1,12 @@
+# A1 choices with exactly the A2 constraints.
+From: F_OK, F_FROZEN, F_MISSING
+To: T_OTHER, T_SAME, T_MISSING
+Amount: A_NEG, A_ZERO, A_MIN, A_L_BELOW, A_L_EQ, A_L_ABOVE, A_B_BELOW, A_B_EQ, A_B_ABOVE
+Currency: C_USD, C_EUR
+Daily: L_FRESH, L_PARTIAL, L_EXHAUSTED
+
+# C1: T_SAME represents an existing source account used as the target.
+IF [To] = "T_SAME" THEN [From] <> "F_MISSING";
+
+# C2: A_ZERO is the single canonical test from A2.
+IF [Amount] = "A_ZERO" THEN [From] = "F_OK" AND [To] = "T_OTHER" AND [Currency] = "C_USD" AND [Daily] = "L_FRESH";

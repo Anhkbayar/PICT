@@ -1,0 +1,11 @@
+Content	Cookies	Popups	Addons	Attacks	Forgeries
+Allow	Restrict	Yes	No	No	Yes
+Block	Allow	Yes	Yes	Yes	No
+Restrict	Restrict	No	No	Yes	No
+Allow	Block	No	Yes	No	No
+Block	Block	No	No	Yes	Yes
+Block	Restrict	Yes	Yes	No	Yes
+Allow	Allow	No	No	No	Yes
+Restrict	Allow	Yes	Yes	No	Yes
+Restrict	Block	Yes	No	Yes	No
+Allow	Block	Yes	Yes	Yes	No

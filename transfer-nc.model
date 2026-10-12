@@ -1,0 +1,6 @@
+# A1 choices without C1/C2 constraints or negative-value annotations.
+From: F_OK, F_FROZEN, F_MISSING
+To: T_OTHER, T_SAME, T_MISSING
+Amount: A_NEG, A_ZERO, A_MIN, A_L_BELOW, A_L_EQ, A_L_ABOVE, A_B_BELOW, A_B_EQ, A_B_ABOVE
+Currency: C_USD, C_EUR
+Daily: L_FRESH, L_PARTIAL, L_EXHAUSTED
